@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "838589388321",
+    "project_id": "appyto",
+    "storage_bucket": "appyto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838589388321:android:57fb04c99090674d24b560",
+        "android_client_info": {
+          "package_name": "com.eno.appy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJanLvZKAhoj-HCAA02EA-PoDZtdUjR6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
