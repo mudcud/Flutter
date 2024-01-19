@@ -1,4 +1,4 @@
-#Wed Jan 10 20:22:24 EAT 2024
+#Fri Jan 19 06:50:04 EAT 2024
 base.0=/home/rulz/StudioProjects/appy/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 base.1=/home/rulz/StudioProjects/appy/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
 base.2=/home/rulz/StudioProjects/appy/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex

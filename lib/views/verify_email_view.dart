@@ -38,7 +38,7 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
                   child: const Text('restart'),
                 ),
           
-        ],
+        ], 
       ),
     );
   }
