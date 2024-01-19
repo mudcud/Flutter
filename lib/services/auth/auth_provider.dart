@@ -2,7 +2,7 @@
 //an abstract class is a class that cannot be instantiated on its own and is typically meant to be subclassed by other classes
 import 'package:appy/services/auth/auth_user.dart';
 // using abstract, you can extend more and mpore auth provider
-abstract class BaseAuth {
+abstract class AuthProvider {
   AuthUser? get currentUser;
   //login
   Future<AuthUser> login({
@@ -18,3 +18,5 @@ abstract class BaseAuth {
 Future<void> logOut();
 Future<void> sendEmailVerification();
 }
+
+//in future you caan add more auth provider, here we only use firebase auth

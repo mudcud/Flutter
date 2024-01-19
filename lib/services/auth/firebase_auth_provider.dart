@@ -8,9 +8,9 @@ import 'package:firebase_auth/firebase_auth.dart'
 class FirebaseAuthProvider implements AuthProvider{
   @override
   Future<AuthUser> createUser({
-    required String email, 
-    required String password,
-  })async
+    required String email,
+   required String password
+   })async
     {
       try{
         await FirebaseAuth.instance.createUserWithEmailAndPassword(
@@ -40,12 +40,12 @@ class FirebaseAuthProvider implements AuthProvider{
       }catch (_){
 throw GenericAuthException(); //catching any exception other than firebase
       }//generic catch
-
     }
+
   @override
-  //@Override annotation or keyword is used to indicate that a method in a subclass is intended to override a method in its superclass. 
+   //@Override annotation or keyword is used to indicate that a method in a subclass is intended to override a method in its superclass. 
   //turn firebase user to an authuser. Our factory constractor had authuser
-  AuthUser? get currentUser{
+AuthUser? get currentUser{
 //the possibility that there might not be a current user (hence the nullable type).
     final user = FirebaseAuth.instance.currentUser; //we call factory constructor
     if (user != null){
@@ -53,13 +53,26 @@ throw GenericAuthException(); //catching any exception other than firebase
 }else{
   return null;
 }
-}  
+}
+
   @override
-  Future<AuthUser> logIn({
-    required String email, 
-    required String password,
-  }) async{
-    try {
+  Future<void> logOut() 
+  async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user !=null){
+      await FirebaseAuth.instance.signOut();
+    }else{
+      throw UserNotLoggedInAuthException();
+    }
+    }
+
+  @override
+  Future<AuthUser> login({
+    required String email,
+     required String password
+     }) 
+     async{
+      try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,
         password: password,
@@ -72,32 +85,24 @@ throw GenericAuthException(); //catching any exception other than firebase
             }else{
               throw  UserNotLoggedInAuthException();
           }
-  }on FirebaseAuthException catch (e){
+  } on FirebaseAuthException catch (e){
     if (e.code == 'user-not-found'){
       throw  UserNotFoundAuthException();
       }else if (e.code == 'wrong-password'){
         throw WrongPasswordAuthException();
-      }else{}
+      }else{
       throw GenericAuthException();
-
+      }
   }catch (_) { //in dart ,you cannot ignore variable, use (_) or you can use e , we are not interested in e here
   //where we have (e) in dart,we have to patter match and the name is e
     throw GenericAuthException();
+  }
+     }
+
 
   @override
-  Future<void> logOut()
+  Future<void> sendEmailVerification()
    async {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user !=null){
-      await FirebaseAuth.instance.signOut();
-    }else{
-      throw UserNotLoggedInAuthException();
-    }
-    }
-
-  @override
-  Future<void> sendEmailVerification() 
-  async {
     final user = FirebaseAuth.instance.currentUser;
     if (user !=null)
     {
@@ -105,4 +110,4 @@ throw GenericAuthException(); //catching any exception other than firebase
     }else{
      throw UserNotLoggedInAuthException(); 
     }}
-  }}}
+  }
