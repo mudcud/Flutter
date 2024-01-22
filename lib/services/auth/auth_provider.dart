@@ -3,6 +3,9 @@
 import 'package:appy/services/auth/auth_user.dart';
 // using abstract, you can extend more and mpore auth provider
 abstract class AuthProvider {
+Future <void> initialize();// Future goes to auth service, not firbase directly from main.dart  Firebase.initialize App
+
+
   AuthUser? get currentUser;
   //login
   Future<AuthUser> login({

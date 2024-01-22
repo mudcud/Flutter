@@ -1,5 +1,6 @@
 import 'package:appy/services/auth/auth_provider.dart';
 import 'package:appy/services/auth/auth_user.dart';
+import 'package:appy/services/auth/firebase_auth_provider.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 
 //auth service does not authentic only firebase, it takes a what you have in auth provider
@@ -9,6 +10,9 @@ class AuthService implements AuthProvider{
   final AuthProvider provider;
 
   const AuthService(this.provider);
+
+  factory AuthService.firebase()=> AuthService(FirebaseAuthProvider());
+  // return instance of auth service which config with firebase provider
   
   @override
   Future<AuthUser> createUser({
@@ -37,4 +41,9 @@ class AuthService implements AuthProvider{
   
   @override
    Future<void> sendEmailVerification() => provider.sendEmailVerification();
+   
+     @override
+     Future<void> initialize() => provider.initialize();
+
+     
 }
