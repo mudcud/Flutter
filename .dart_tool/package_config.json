@@ -2,10 +2,28 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-64.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "_flutterfire_internals",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.3.16",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/analyzer-6.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/args-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "async",
@@ -33,19 +51,19 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore-4.13.6",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore-4.14.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_platform_interface",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore_platform_interface-6.0.10",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore_platform_interface-6.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_web",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.8.10",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.9.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -54,6 +72,24 @@
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/convert-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "coverage",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/coverage-1.7.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/crypto-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "cupertino_icons",
@@ -68,26 +104,38 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "ffi",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/ffi-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "firebase_analytics",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics-10.7.4",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics-10.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_analytics_platform_interface",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics_platform_interface-3.8.4",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics_platform_interface-3.9.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_analytics_web",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics_web-0.5.5+11",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics_web-0.5.5+12",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_auth-4.15.3",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_auth-4.16.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -99,7 +147,7 @@
     },
     {
       "name": "firebase_auth_web",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.12",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.13",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -146,8 +194,32 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/glob-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "http_multi_server",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -162,6 +234,12 @@
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/lints-3.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "matcher",
@@ -182,16 +260,112 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mime",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/mime-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/node_preamble-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/package_config-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "plugin_platform_interface",
-      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.7",
+      "name": "path_provider",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path_provider-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path_provider_android-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/platform-3.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "pool",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/shelf_static-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "sky_engine",
@@ -200,10 +374,34 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/source_maps-0.10.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "sqflite",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/sqflite-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "sqflite_common",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/sqflite_common-2.5.0+2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "stack_trace",
@@ -224,14 +422,32 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "synchronized",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/synchronized-3.1.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
+      "name": "test",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/test-1.24.9",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "test_api",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/test_api-0.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/test_core-0.5.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -248,10 +464,52 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "vm_service",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/watcher-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "web",
       "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/web-0.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "win32",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/win32-5.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/xdg_directories-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///home/rulz/.pub-cache/hosted/pub.dev/yaml-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "appy",
@@ -260,7 +518,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2023-12-29T13:04:09.104651Z",
+  "generated": "2024-01-23T06:37:26.955981Z",
   "generator": "pub",
   "generatorVersion": "3.2.3"
 }

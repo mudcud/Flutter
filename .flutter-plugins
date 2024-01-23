@@ -1,9 +1,15 @@
 # This is a generated file; do not edit or check into version control.
-cloud_firestore=/home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore-4.13.6/
-cloud_firestore_web=/home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.8.10/
-firebase_analytics=/home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics-10.7.4/
-firebase_analytics_web=/home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics_web-0.5.5+11/
-firebase_auth=/home/rulz/.pub-cache/hosted/pub.dev/firebase_auth-4.15.3/
-firebase_auth_web=/home/rulz/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.12/
+cloud_firestore=/home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore-4.14.0/
+cloud_firestore_web=/home/rulz/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.9.0/
+firebase_analytics=/home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics-10.8.0/
+firebase_analytics_web=/home/rulz/.pub-cache/hosted/pub.dev/firebase_analytics_web-0.5.5+12/
+firebase_auth=/home/rulz/.pub-cache/hosted/pub.dev/firebase_auth-4.16.0/
+firebase_auth_web=/home/rulz/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.13/
 firebase_core=/home/rulz/.pub-cache/hosted/pub.dev/firebase_core-2.24.2/
 firebase_core_web=/home/rulz/.pub-cache/hosted/pub.dev/firebase_core_web-2.10.0/
+path_provider=/home/rulz/.pub-cache/hosted/pub.dev/path_provider-2.1.2/
+path_provider_android=/home/rulz/.pub-cache/hosted/pub.dev/path_provider_android-2.2.2/
+path_provider_foundation=/home/rulz/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2/
+path_provider_linux=/home/rulz/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/home/rulz/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/
+sqflite=/home/rulz/.pub-cache/hosted/pub.dev/sqflite-2.3.0/

@@ -6,11 +6,12 @@ import 'package:flutter/foundation.dart';
  class AuthUser{
   final bool isEmailVerified;
 //This class has a single member variable called isEmailVerified, which is a boolean (true/false) value.
-  const AuthUser(this.isEmailVerified);
+  const AuthUser({required this.isEmailVerified});
 //a constructor is a special method within a class that is automatically called when an object of the class is created
 //This is a constructor for the AuthUser class
 //It takes a boolean parameter named isEmailVerified and assigns it to the class member with the same name
-  factory AuthUser.fromFirebase(User user)=> AuthUser(user.emailVerified);
+  factory AuthUser.fromFirebase(User user)=> 
+  AuthUser(isEmailVerified: user.emailVerified);
   
 
 //AuthUser goes into the constractor line 9 and takes email verified value of firebase user and place in the class line 6
