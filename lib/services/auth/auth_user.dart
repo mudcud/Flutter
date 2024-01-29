@@ -4,14 +4,23 @@ import 'package:flutter/foundation.dart';
  
  @immutable //internal willnever be changed upon utilization
  class AuthUser{
+
+   
+//auth user has optional string as its email,and email string is read from firebase user  email:user.email line 20
+   final String? email;//email field to create the user in the DB ?make it optional
+
   final bool isEmailVerified;
 //This class has a single member variable called isEmailVerified, which is a boolean (true/false) value.
-  const AuthUser({required this.isEmailVerified});
+  const AuthUser({
+    required this.email, 
+    required this.isEmailVerified});
 //a constructor is a special method within a class that is automatically called when an object of the class is created
 //This is a constructor for the AuthUser class
 //It takes a boolean parameter named isEmailVerified and assigns it to the class member with the same name
   factory AuthUser.fromFirebase(User user)=> 
-  AuthUser(isEmailVerified: user.emailVerified);
+  AuthUser(
+    email: user.email,
+    isEmailVerified: user.emailVerified);
   
 
 //AuthUser goes into the constractor line 9 and takes email verified value of firebase user and place in the class line 6
@@ -21,6 +30,5 @@ import 'package:flutter/foundation.dart';
 //It creates and returns a new instance of the AuthUser class using the AuthUser constructor.
 
 //here we copied firebase user and made copy of it into our of user so thatwe are not exposing firebase user with all ot its property to our user interface
-
 
  }
