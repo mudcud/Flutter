@@ -37,10 +37,16 @@ void dispose()  {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Main UI'),
-        actions: [
-          PopupMenuButton<MenuAction>(
+        title: const Text('Your'),
+        actions: 
+        [// list of actions to be performed
 
+          IconButton(onPressed: (){
+            Navigator.of(context).pushNamed(newNoteRoute); 
+          },
+          icon:const Icon(Icons.add), 
+          ),
+          PopupMenuButton<MenuAction>(
           onSelected: (value) async {
             switch(value){
               case MenuAction.logout :
@@ -50,13 +56,11 @@ void dispose()  {
                 Navigator.of(context).pushNamedAndRemoveUntil(
                   loginRoute,
                   (_)=>false,
-                  
                   );
-
               }
-     
             }
           }, 
+
           itemBuilder: (context) {
            return const[
             PopupMenuItem<MenuAction>
@@ -67,9 +71,10 @@ void dispose()  {
             ),
            ];   
           },)
-
         ]
+
       ),
+      
       body :FutureBuilder(
         future: _notesService.getOrCreateUser(email: userEmail) ,
         builder: (context,snapshot){
@@ -81,18 +86,18 @@ void dispose()  {
               builder:(context, snapshot) {
                 switch(snapshot.connectionState){
 
-                  case ConnectionState.waiting:
-                  return const Text ('Waiting fo notes');
+                  case ConnectionState.waiting://fall thru,case has no logic,it flow to next logic
+                  case ConnectionState.active:
+                    return const Text ('Waiting fo notes');
                   default:
-                  return const CircularProgressIndicator();         
+                    return const CircularProgressIndicator();         
                 }
               },
                );
+            
             default:
-            return const CircularProgressIndicator();
-              
+            return const CircularProgressIndicator();    
           }
-
         },
         
       
