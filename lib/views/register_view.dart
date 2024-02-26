@@ -2,7 +2,7 @@
 import 'package:appy/constants/routes.dart';
 import 'package:appy/services/auth/auth_exceptions.dart';
 import 'package:appy/services/auth/auth_service.dart';
-import 'package:appy/utilities/show_error_dialog.dart';
+import 'package:appy/utilities/dialogs/error_dialog.dart';
 import 'package:flutter/material.dart';
 // import 'dart:developer' as devtools show log;
 

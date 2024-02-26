@@ -2,6 +2,8 @@ import 'package:appy/constants/routes.dart';
 import 'package:appy/enums/menu_action.dart';
 import 'package:appy/services/auth/auth_service.dart';
 import 'package:appy/services/crud/notes_service.dart';
+import 'package:appy/utilities/dialogs/logout_dialog.dart';
+import 'package:appy/views/notes/notes_list_view.dart';
 import 'package:flutter/material.dart';
 
 class NotesView extends StatefulWidget {
@@ -26,12 +28,6 @@ void initState()  {
   super.initState();
 }
 
-//CLosing the database
-@override
-void dispose()  {
-  _notesService.close();
-  super.dispose();
-}
 
   @override
   Widget build(BuildContext context) {
@@ -88,43 +84,32 @@ void dispose()  {
 
                   case ConnectionState.waiting://fall thru,case has no logic,it flow to next logic
                   case ConnectionState.active:
-                    return const Text ('Waiting fo notes');
+                  if (snapshot.hasData){
+                    final allNotes = snapshot.data as List<DatabaseNote>;
+                    return NotesListView(
+                      notes: allNotes,
+                       onDeleteNote:(note) async { 
+                        await _notesService.deleteNote(id: note.id);
+
+                       },
+                       );
+                  
+                  }else{
+
+                    return const CircularProgressIndicator();
+                  }
                   default:
                     return const CircularProgressIndicator();         
                 }
-              },
+               },
                );
             
-            default:
+             default:
             return const CircularProgressIndicator();    
           }
         },
-        
-      
         ),
     );
   }
 }
 
-Future<bool> showLogOutDialog(BuildContext context){
- return showDialog<bool> (
-  context:context,
-    builder: (context){
-      return AlertDialog(
-        title: const Text ('Sign out'),
-        content: const Text('Are you sure you want to sign out'),
-        actions: [
-TextButton(onPressed: (){
-  Navigator.of(context).pop(false);
-}, child: const Text ('Cancel'),
-),
-TextButton(onPressed: (){
-  Navigator.of(context).pop(true);
-}, child: const Text ('Log out'),
-),
-        ],
-      );
-   
-},
-).then((value) => value ?? false);
-}

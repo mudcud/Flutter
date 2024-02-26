@@ -14,15 +14,27 @@ class NotesService {
   //control list of stream of database
 
 
+ static final NotesService _shared = NotesService._sharedInstance();//singleton
+  //Ensure Stream contoller is initialized upon constructing an instance of notes service
+  NotesService._sharedInstance(){
+    _notesStreamController = StreamController<List<DatabaseNote>>.broadcast(
+      onListen:(){
+      //we populate with all values we read in the database _notes
+      _notesStreamController.sink.add(_notes);
 
- static final NotesService _shared =NotesService._sharedInstance();//singleton
-  NotesService._sharedInstance();
+      },
+      //Called when a new listner subscrbe to notes controllers stream
+    ); 
+
+  }
   factory NotesService()=> _shared;
  
-  final _notesStreamController =  //Stream controller is our interface to the outside
-  StreamController<List<  DatabaseNote>>.broadcast();
+  late final StreamController<List<  DatabaseNote>> _notesStreamController;  //Stream controller is our interface to the outside
+  
   //broadcast allow one to create new listners that listens to changes. i.e when is not used,when hot restart,it will saay stream has already listned
  
+ //when one start listnen to propert allNotes which uses notesSStream controller
+ //when its a new subscriber the on listen wil be called and populate stream controller
  Stream<List<DatabaseNote>> get allNotes => _notesStreamController.stream;//will be used by notes view to return future and use StreamBuilder to display all notes
 
  Future<DatabaseUser> getOrCreateUser({required String email}) async{
